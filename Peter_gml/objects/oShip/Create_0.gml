@@ -16,11 +16,10 @@ move_spd = 6;
 
 //how many bullet every 30 frames
 shooting_time = 30;
-bullet_count = 2;
-fire_spd = shooting_time / bullet_count;
+global.bullet_count = 3;
 
 bullet_timer = shooting_time;
-dispersion = 8;
+global.dispersion = 1;
 
 
 spacing = 0;

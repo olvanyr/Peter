@@ -1,2 +1,2 @@
-damage = 2;
+global.damage = 2;
 bullet_spd = 10;

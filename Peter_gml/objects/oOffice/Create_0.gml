@@ -15,7 +15,4 @@ next_line = 0;
 timer = 0;
 
 // room 1
-lines[0] = "I here to free you";
-lines[1] = "The outside world is very hostile";
-lines[2] = "But it is yours now";
-lines[3] = "you will have to kill\nall of this creature";
+lines[0] = "";

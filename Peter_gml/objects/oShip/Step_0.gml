@@ -1,11 +1,17 @@
-v_move = keyboard_check(vk_down	) - keyboard_check(vk_up);
-h_move = keyboard_check(vk_right) - keyboard_check(vk_left);
+v_move = oInput.down - oInput.up;
+h_move = oInput.right - oInput.left;
 
 move_and_collide();
 
 
 //shooting
-if keyboard_check_pressed(vk_space)
+if global.bullet_count >= 30 global.bullet_count = 30; 
+if global.dispersion >= 30 global.dispersion = 30;
+
+
+fire_spd = shooting_time / global.bullet_count;
+
+if oInput.shoot
 {
 	if bullet_timer >= shooting_time 
 	{
@@ -24,11 +30,9 @@ if bullet_timer <= shooting_time
 		spacing += fire_spd;
 		with instance_create_layer(x,y,"Effects",oBullet)
 		{
-			direction = other.image_angle + random_range(-other.dispersion,other.dispersion);
+			direction = other.image_angle + random_range(-global.dispersion,global.dispersion);
 		}
 	}
-	
-	
 }
 
 
@@ -36,8 +40,5 @@ if invincibility > 0
 {
 	invincibility --;
 }
-
-show_debug_message(bullet_timer);
-
 
 
