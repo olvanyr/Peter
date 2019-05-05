@@ -6,8 +6,6 @@ if vsp == 0 || hsp == 0
 h_move = lengthdir_x(1,direction);
 v_move = lengthdir_y(1,direction);
 
-show_debug_message(h_move);
-
 move_and_collide();
 
 switch type

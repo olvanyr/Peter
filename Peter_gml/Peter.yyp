@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "1f4cc550-5c81-417f-b596-85fad7ec52c6",
+            "Value": {
+                "id": "113a4425-c195-4551-aef1-bc855be03341",
+                "resourcePath": "objects\\oSpawner\\oSpawner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "210de876-98ac-4afb-8605-38e7f5d9201b",
             "Value": {
                 "id": "9b6752ce-45e7-4b99-b1c2-0cf80485704f",
@@ -167,6 +175,14 @@
             }
         },
         {
+            "Key": "62c345a4-320e-4ef1-b058-b93045f1eb72",
+            "Value": {
+                "id": "bc8907e8-87eb-4f56-a33a-f6d8d0d8e1f3",
+                "resourcePath": "scripts\\reduce_life\\reduce_life.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "64027fed-8e11-4ee7-af0d-7f982cb3140d",
             "Value": {
                 "id": "bb0a5d30-1485-4023-91bd-431e7cb0c7c1",
@@ -228,6 +244,14 @@
                 "id": "061d0b01-aacc-4753-8c7e-5975201404fd",
                 "resourcePath": "sprites\\sUpgrade\\sUpgrade.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8c22290f-2b38-4b3f-b2be-586f06f74a98",
+            "Value": {
+                "id": "4530b56b-e206-4b6a-be4d-eea495797b1a",
+                "resourcePath": "objects\\oSin\\oSin.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -426,7 +450,8 @@
     "script_order": [
         "210de876-98ac-4afb-8605-38e7f5d9201b",
         "39952e9b-3490-48df-82c5-efe2b3bf23ab",
-        "dddc8fc0-6b01-4e8c-9e06-2d2900fa14ca"
+        "dddc8fc0-6b01-4e8c-9e06-2d2900fa14ca",
+        "62c345a4-320e-4ef1-b058-b93045f1eb72"
     ],
     "tutorial": ""
 }
