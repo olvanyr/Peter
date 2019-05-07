@@ -1,4 +1,4 @@
-draw_self();
+if object_index != oShip draw_self();
 
 if flash > 0
 {

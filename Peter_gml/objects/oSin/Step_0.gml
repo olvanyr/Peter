@@ -1,7 +1,7 @@
 event_inherited();
 
-x_coord = x + sin(get_timer()/500000) * 3;
+x_coord = x + sin(y/ondulation_spd) * emplitude;
 
 x = x_coord;
 
-y += 1;
+y += spd;

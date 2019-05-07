@@ -1,8 +1,10 @@
 var ww = window_get_width();
 var hh = window_get_height();
 
-
-draw_sprite_ext(global.office[global.lvl],0,ww/2,hh/2,4,4,0,c_white,1);
+if room == rFiered
+{
+	 draw_sprite_ext(sOffice_fiered,0,ww/2,hh/2,4,4,0,c_white,1);
+}else draw_sprite_ext(global.office[global.lvl],0,ww/2,hh/2,4,4,0,c_white,1);
 
 draw_set_alpha(1);
 draw_set_color(c_text);

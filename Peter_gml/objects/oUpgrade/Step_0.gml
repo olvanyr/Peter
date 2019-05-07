@@ -15,5 +15,15 @@ switch type
 		sprite_index = sNumber;
 	}
 	break;
+	case "dispertion" : 
+	{
+		sprite_index = sDispertion;
+	}
+	break;
+	case "damage" : 
+	{
+		sprite_index = sDamage;
+	}
+	break;
 	
 }

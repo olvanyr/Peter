@@ -18,5 +18,6 @@ switch type
 	
 }
 
+audio_play_sound(sndPowerup,1,false);
 instance_destroy();
 

@@ -8,6 +8,14 @@ switch global.lvl
 		lines[3] = "everyone heer, me first\nwhant to see you growing into the office ";
 	}
 	break;
+	case "fiered" :
+	{
+		lines[0] = "We are so sorry to see you leave";
+		lines[1] = "you can't stay with us after that";
+		lines[2] = "you had a burn out buddy, it is bad for you";
+		lines[3] = "We have to fiere you, for your own good !";
+	}
+	break;
 }
 
 

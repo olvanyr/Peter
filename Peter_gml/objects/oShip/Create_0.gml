@@ -27,6 +27,7 @@ spacing = 0;
 // life
 life = 3;
 
+kills = 0;
 invincibility = 0;
 
 if !instance_exists(oGUI)

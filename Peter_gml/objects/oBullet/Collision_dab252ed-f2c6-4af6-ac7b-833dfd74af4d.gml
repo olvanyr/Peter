@@ -1,4 +1,9 @@
-if creator =! noone
+if creator == "enemy"
 {
-	reduce_life();
+	with other
+	{
+		reduce_life();
+	}
+	
+	instance_destroy();
 }

@@ -14,5 +14,8 @@ line = lines[next_line];
 
 if next_line == array_length_1d(lines) -1 && oInput.shoot && letters_count >= string_length(line)
 {
-	room_goto(rComputer);
+	if room == rFiered
+	{
+		room_goto(rInit);
+	}else room_goto(rComputer);
 }

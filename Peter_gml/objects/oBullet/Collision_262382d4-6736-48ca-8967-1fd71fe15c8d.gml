@@ -1,9 +1,16 @@
-other.hp -= global.damage;
-other.flash = 1;
 
-instance_destroy();
-
-with instance_create_layer(x,y,"Effects", oExplosion)
+if creator == noone
 {
-	image_angle = random_range(0,360);
+	other.hp -= global.damage;
+	other.flash = 1;
+
+	audio_sound_pitch(sndHit2,choose(0.9,1.0,1.1));
+	audio_play_sound(sndHit2,1,false);
+	
+	instance_destroy();
+
+	with instance_create_layer(x,y,"Effects", oExplosion)
+	{
+		image_angle = random_range(0,360);
+	}
 }
