@@ -28,22 +28,22 @@ if invincibility <= 0
 			spacing = 0;
 		}
 	}
-}
 
-if bullet_timer <= shooting_time bullet_timer++;
+	if bullet_timer <= shooting_time bullet_timer++;
 
-// create multiple bullet so you dont realy have to smash the keyboard
-if bullet_timer <= shooting_time
-{
-	if bullet_timer >= spacing
+	// create multiple bullet so you dont realy have to smash the keyboard
+	if bullet_timer <= shooting_time
 	{
-		spacing += fire_spd;
-		audio_sound_pitch(sndBullet4,choose(0.9,1.0,1.1));
-		audio_play_sound(sndBullet4,0,false);
-		screenshake(3,2);
-		with instance_create_layer(x,y,"Effects",oBullet)
+		if bullet_timer >= spacing
 		{
-			direction = other.image_angle + random_range(-global.dispersion,global.dispersion);
+			spacing += fire_spd;
+			audio_sound_pitch(sndBullet4,choose(0.9,1.0,1.1));
+			audio_play_sound(sndBullet4,0,false);
+			screenshake(3,2);
+			with instance_create_layer(x,y,"Effects",oBullet)
+			{
+				direction = other.image_angle + random_range(-global.dispersion,global.dispersion);
+			}
 		}
 	}
 }

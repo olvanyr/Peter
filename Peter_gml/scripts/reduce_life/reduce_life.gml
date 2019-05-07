@@ -9,6 +9,11 @@ if invincibility <= 0
 	invincibility = 120;
 	life -= 1;
 	flash = 1;
+	global.bullet_count = 3;
+
+	global.dispersion = 1;
+
+	global.damage = 2;
 	
 	repeat 2
 	{

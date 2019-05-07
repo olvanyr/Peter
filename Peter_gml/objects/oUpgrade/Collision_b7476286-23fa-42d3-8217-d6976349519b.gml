@@ -7,12 +7,12 @@ switch type
 	break;
 	case "dispertion" : 
 	{
-		global.dispersion += 2;
+		global.dispersion += 3.5;
 	}
 	break;
 	case "damage" : 
 	{
-		global.damage += 2;
+		global.damage += 1;
 	}
 	break;
 	

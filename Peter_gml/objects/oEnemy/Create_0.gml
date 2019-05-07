@@ -7,4 +7,7 @@ damage = 3;
 
 spd = 0;
 
-spawn = false;
+if irandom(20) == 1
+{
+	spawn = true;
+}else spawn = false;

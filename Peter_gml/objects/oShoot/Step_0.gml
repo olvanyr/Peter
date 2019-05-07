@@ -10,6 +10,10 @@ if spd == 0 && timer mod 60 == 0
 		{
 			direction = point_direction(x,y,oShip.x,oShip.y)
 		}else direction = other.image_angle - 90;
+		var sprite = string("sBullet_") + string(other.color);
+		sprite = asset_get_index(sprite);
+		sprite_index = sprite;
+		image_speed = 2;
 	}
 }
 

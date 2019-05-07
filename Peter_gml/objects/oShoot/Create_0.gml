@@ -5,3 +5,5 @@
 event_inherited();
 
 timer = 0;
+
+color = choose("yellow","green","blue","red","orange");

@@ -27,3 +27,10 @@ switch type
 	break;
 	
 }
+
+timer ++;
+
+if timer >= 600
+{
+	instance_destroy();
+}

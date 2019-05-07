@@ -2,7 +2,7 @@
     "id": "0647a4b8-1394-4f19-99e7-27a960aa7025",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sBSullet_orange",
+    "name": "sBullet_orange",
     "For3D": false,
     "HTile": false,
     "VTile": false,

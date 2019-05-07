@@ -1,6 +1,6 @@
 
 
-if timer mod 120 == 0
+if timer mod 80 == 0
 {
 	for (var i = 0; i < 9; i++)
 	{
@@ -11,7 +11,6 @@ if timer mod 120 == 0
 			direction = 0 + (45 * i);
 			var color = choose("yellow","green","blue","red","orange");
 			var sprite = string("sBullet_") + string(color);
-			show_debug_message(sprite);
 			sprite = asset_get_index(sprite);
 			sprite_index = sprite;
 			image_speed = 2;

@@ -9,3 +9,5 @@ direction = choose(45,135,225,313);
 move_spd = 5;
 
 type = "number";
+
+timer = 0;
