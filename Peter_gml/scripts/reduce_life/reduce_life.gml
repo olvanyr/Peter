@@ -9,4 +9,12 @@ if invincibility <= 0
 	invincibility = 120;
 	life -= 1;
 	flash = 1;
+	
+	repeat 2
+	{
+		with instance_create_layer(60,60,"effects",oUpgrade)
+		{
+			type = choose("dispertion","damage","number","damage","number","damage","number");
+		}
+	}
 }

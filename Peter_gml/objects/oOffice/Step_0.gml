@@ -8,6 +8,15 @@ switch global.lvl
 		lines[3] = "everyone heer, me first\nwhant to see you growing into the office ";
 	}
 	break;
+	case 2 :
+	{
+		lines[0] = "You have done a great start !";
+		lines[1] = "your here for what four month ?";
+		lines[2] = "beaucause I'm realy nice, I offer you a promotion";
+		lines[3] = "It means more responsability,\nand you will have to inprove your skill";
+		lines[4] = "But I'm sure you will be OK !";
+	}
+	break;
 	case "fiered" :
 	{
 		lines[0] = "We are so sorry to see you leave";

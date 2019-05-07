@@ -16,7 +16,7 @@ if hp <= 0
 	{
 		with instance_create_layer(x,y,"Effects",oUpgrade)
 		{
-			type = choose("dispertion","damage","number");
+			type = choose("dispertion","damage","number","damage","number","damage","number");
 		}
 	}
 }
@@ -27,3 +27,5 @@ if y >= 684
 {
 	instance_destroy();
 }
+
+global.alive = true;

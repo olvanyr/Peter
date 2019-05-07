@@ -4,3 +4,6 @@ if life <= 0
 	room_goto(rFiered);
 	instance_destroy();
 }
+
+//juste use to reset th alive cunter 
+global.alive = 0;
