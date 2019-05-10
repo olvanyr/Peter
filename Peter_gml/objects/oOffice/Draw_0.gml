@@ -1,9 +1,6 @@
-/*
-display_set_gui_size(window_get_width(),window_get_height());
+var ww = room_width;
 
-var ww = display_get_gui_width();
-
-var hh = display_get_gui_height();
+var hh = room_height;
 
 if room == rFiered
 {
