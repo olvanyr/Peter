@@ -2,7 +2,7 @@ event_inherited();
 
 state = "normal";
 
-hp = 250;
+hp = 600;
 
 spd = 0.5;
 

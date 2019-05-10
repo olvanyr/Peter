@@ -16,6 +16,6 @@ if next_line == array_length_1d(lines) -1 && oInput.shoot && letters_count >= st
 {
 	if room == rFiered
 	{
-		room_goto(rInit);
+		game_restart();
 	}else room_goto(rComputer);
 }

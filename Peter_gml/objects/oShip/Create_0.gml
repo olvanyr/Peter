@@ -1,5 +1,4 @@
 event_inherited();
-
 //set the orientation of the sprite to down
 image_angle = 90;
 

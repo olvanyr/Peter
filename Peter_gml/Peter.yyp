@@ -191,6 +191,22 @@
             }
         },
         {
+            "Key": "30080526-420b-4d3f-9684-7e6db55a271e",
+            "Value": {
+                "id": "4b903a45-37c3-4342-ae2f-880503e42563",
+                "resourcePath": "sounds\\_01_The_Misadventure_Begins\\_01_The_Misadventure_Begins.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "314e9562-2898-4492-8c32-42cf82d7e34f",
+            "Value": {
+                "id": "ef44ba07-994f-4d7e-b22e-70036502c242",
+                "resourcePath": "objects\\oJukebox\\oJukebox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "36accaa1-2602-43c4-96b5-977bd7481276",
             "Value": {
                 "id": "d221efdb-9308-4479-b5ab-dd5b213ac444",
@@ -780,6 +796,14 @@
                 "id": "9eef6bda-7328-4e72-8a5f-e951b9a0de7a",
                 "resourcePath": "views\\f1811762-4f51-4d8e-80cc-009a6808567c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f1d18899-b538-4873-904d-e15dafcc1efb",
+            "Value": {
+                "id": "69613d78-2fdf-4932-afe7-c224ebbf8952",
+                "resourcePath": "sounds\\sndNosound\\sndNosound.yy",
+                "resourceType": "GMSound"
             }
         },
         {

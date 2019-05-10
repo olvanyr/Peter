@@ -1,5 +1,10 @@
 
-if creator == noone
+if other.object_index == oTaxes
+{
+	if other.state == "normal" exit;
+}
+
+if creator == noone 
 {
 	other.hp -= global.damage;
 	other.flash = 1;

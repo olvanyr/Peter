@@ -6,7 +6,7 @@ var _room = argument0;
 var lvl = argument1;
 
 
-alpha += 0.1
+alpha += 0.01
 
 if alpha > 1
 {

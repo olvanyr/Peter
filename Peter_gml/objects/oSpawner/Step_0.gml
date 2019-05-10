@@ -1,5 +1,12 @@
 timer ++;
 
+
+if !instance_exists(oShip)
+{
+	end_wave(rFiered,"fiered");
+	global.new_music = sndNosound;
+}
+
 switch global.lvl
 {
 	#region lvl 1
@@ -344,10 +351,53 @@ switch global.lvl
 	}
 	break;
 	#endregion
-		#region lvl 3
+	#region lvl 3
 	case 3 : 
 	{
-		if wave_end end_wave(rOffice1, 3);
+		if wave_end end_wave(rOffice1, 4);
+		#region circle
+		if timer == 250
+		{
+			with instance_create_layer(x - 150 + 50,y,"Instances",oCircle)
+			{
+				spd = 1;
+				hp = 12;
+				hp_max = hp;
+			}
+			with instance_create_layer(x + 50,y,"Instances",oCircle)
+			{
+				spd = 1;
+				hp = 12;
+				hp_max = hp;
+				orbital_spd = -1;
+			}
+			with instance_create_layer(x + 150 + 50,y,"Instances",oCircle)
+			{
+				spd = 1;
+				hp = 12;
+				hp_max = hp;
+			}
+			with instance_create_layer(x -50,y,"Instances",oCircle)
+			{
+				spd = 1;
+				hp = 12;
+				hp_max = hp;
+			}
+			with instance_create_layer(x,y,"Instances",oCircle)
+			{
+				spd = 1;
+				hp = 12;
+				hp_max = hp;
+				orbital_spd = -1;
+			}
+			with instance_create_layer(x - 100,y,"Instances",oCircle)
+			{
+				spd = 1;
+				hp = 12;
+				hp_max = hp;
+			}
+		}
+		#endregion
 		#region sin 1
 		//sin 
 		if timer > 120 && timer < 420
@@ -410,7 +460,7 @@ switch global.lvl
 		}
 		#endregion
 		#region sin 2
-		if timer > 800 && timer < 1120
+		if timer > 920 && timer < 1120
 		{
 			if timer mod 30 == 0
 			{
@@ -441,7 +491,7 @@ switch global.lvl
 		}
 		
 		//sin 
-		if timer > 800 && timer < 1120
+		if timer > 920 && timer < 1120
 		{
 			if timer mod 30 == 0
 			{
@@ -457,7 +507,7 @@ switch global.lvl
 		}
 		
 		//sin bleu
-		if timer == 920
+		if timer == 800
 		{
 			with instance_create_layer(x + 200,y,"Instances",oSin)
 			{
@@ -473,7 +523,7 @@ switch global.lvl
 		#endregion
 		
 		//Clock
-		if timer == 1600
+		if timer == 1600 || timer == 2400
 		{
 			with instance_create_layer(x + 150 + 50,y,"Instances",oClock)
 			{
@@ -491,42 +541,35 @@ switch global.lvl
 				hp_max = hp;
 			}
 		}
+		//mail * 9
+		if timer == 1700 ||timer == 1900 || timer == 2000
+		{
+			with instance_create_layer(x - 300,y,"Instances",oMail)
+			{
+				spd = 2;
+				hp = 5;
+				hp_max = hp;
+			}
+			with instance_create_layer(x,y,"Instances",oMail)
+			{
+				spd = 2;
+				hp = 5;
+				hp_max = hp;
+			}
+			with instance_create_layer(x + 300,y,"Instances",oMail)
+			{
+				spd = 2;
+				hp = 5;
+				hp_max = hp;
+			}
+		}
 		
-		//mail shooting
+		//tases
 		if timer == 2300
 		{
-			with instance_create_layer(x + 150 + 50,y,"Instances",oShoot)
-			{
-				hp = 60;
-				spawn = true;
-			}
+			instance_create_layer(x,y,"Instances",oTaxes)
 		}
 		
-		if timer == 2500
-		{
-			with instance_create_layer(x - 150,y,"Instances",oShoot)
-			{
-				hp = 60;
-				spawn = true;
-			}
-		}
-		
-		if timer == 2700
-		{
-			clock = instance_create_layer(x,y,"Instances",oClock);
-			with clock
-			{
-				hp = 35;
-				hp_max = hp;
-				spd = 3;
-			}
-		}
-		
-		if timer > 2800
-		{
-			if instance_exists(clock) clock.spd = 0;
-		}
-
 		if timer > 3200
 		{
 			with all

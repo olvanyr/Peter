@@ -7,8 +7,10 @@ if invincibility <= 0
 	screenshake(12,6);
 	audio_play_sound(sndShip_explosion,1,false);
 	invincibility = 120;
-	life -= 1;
 	flash = 1;
+	
+	global.life -= 1;
+	
 	global.bullet_count = 3;
 
 	global.dispersion = 1;
