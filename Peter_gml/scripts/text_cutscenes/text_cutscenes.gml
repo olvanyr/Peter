@@ -17,5 +17,6 @@ if next_line == array_length_1d(lines) -1 && oInput.shoot && letters_count >= st
 	if room == rFiered
 	{
 		game_restart();
+		global.new_music = _01_The_Misadventure_Begins;
 	}else room_goto(rComputer);
 }

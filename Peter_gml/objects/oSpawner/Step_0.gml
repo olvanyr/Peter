@@ -6,6 +6,10 @@ if !instance_exists(oShip)
 	end_wave(rFiered,"fiered");
 	global.new_music = sndNosound;
 }
+if instance_exists(oShip)
+{
+	global.new_music = _01_The_Misadventure_Begins;
+}
 
 switch global.lvl
 {
