@@ -5,6 +5,9 @@ var hh = room_height;
 if room == rFiered
 {
 	 draw_sprite_ext(sOffice_fiered,0,ww/2,hh/2,4,4,0,c_white,1);
+}else if room = rEnd 
+{
+	 draw_sprite_ext(sOffice_end,0,ww/2,hh/2,4,4,0,c_white,1);
 }else draw_sprite_ext(global.office[global.lvl],0,ww/2,hh/2,4,4,0,c_white,1);
 
 draw_set_alpha(1);

@@ -39,7 +39,7 @@ if invincibility <= 0
 			spacing += fire_spd;
 			audio_sound_pitch(sndBullet4,choose(0.9,1.0,1.1));
 			audio_play_sound(sndBullet4,0,false);
-			screenshake(3,2);
+			screenshake(3,4);
 			with instance_create_layer(x,y,"Effects",oBullet)
 			{
 				direction = other.image_angle + random_range(-global.dispersion,global.dispersion);

@@ -29,7 +29,7 @@ life = 3;
 kills = 0;
 invincibility = 0;
 
-if !instance_exists(oGUI)
+if !instance_exists(oHUD)
 {
-	instance_create_layer(x,y,"Instances", oGUI);
+	instance_create_layer(x,y,"Instances", oHUD);
 }

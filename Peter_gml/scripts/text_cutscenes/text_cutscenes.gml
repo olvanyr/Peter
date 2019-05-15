@@ -14,7 +14,7 @@ line = lines[next_line];
 
 if next_line == array_length_1d(lines) -1 && oInput.shoot && letters_count >= string_length(line)
 {
-	if room == rFiered
+	if room == rFiered ||room = rEnd
 	{
 		game_restart();
 		global.new_music = _01_The_Misadventure_Begins;

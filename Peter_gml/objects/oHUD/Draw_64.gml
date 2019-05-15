@@ -7,7 +7,7 @@ var hh = display_get_gui_height();
 if instance_exists(oShip)
 {
 	draw_set_text(c_white,noone,fa_left,fa_center);
-	draw_text(ww/6 - 25, hh/6,"remaining life : " + string(oShip.life));
+	draw_text(ww/6 - 25, hh/6,"remaining life : " + string(global.life));
 	
 	draw_text(((ww/6) * 5) - 25, hh/6,"kills : " + string(oShip.kills));
 }

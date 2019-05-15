@@ -4,7 +4,7 @@ if invincibility <= 0
 	{
 		sprite_index = sShip_explosion;
 	}
-	screenshake(12,6);
+	screenshake(12,10);
 	audio_play_sound(sndShip_explosion,1,false);
 	invincibility = 120;
 	flash = 1;

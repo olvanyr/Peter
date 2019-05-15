@@ -111,6 +111,22 @@
             }
         },
         {
+            "Key": "15d81006-9a26-40c0-ba74-1870ae749fbe",
+            "Value": {
+                "id": "86db8ace-7a12-4316-a3d9-8cc557c4bc77",
+                "resourcePath": "sprites\\sOffice_end\\sOffice_end.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "193923a7-841f-40d7-b2d1-ddfa457b0b27",
+            "Value": {
+                "id": "e4077774-0264-46bc-b0a7-c4723b358fb6",
+                "resourcePath": "rooms\\rEnd\\rEnd.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "1e1229f1-37fc-4330-8e9d-c19eb8d029e4",
             "Value": {
                 "id": "8fba5ce7-4c0e-4466-b4af-8f3672f068b2",
@@ -618,7 +634,7 @@
             "Key": "aab68107-b843-4de1-9d24-189a4f8583c4",
             "Value": {
                 "id": "788d4c78-ec5f-4ee6-a44e-0a162e0d2c36",
-                "resourcePath": "objects\\oGUI\\oGUI.yy",
+                "resourcePath": "objects\\oHUD\\oHUD.yy",
                 "resourceType": "GMObject"
             }
         },
