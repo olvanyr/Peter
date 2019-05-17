@@ -8,7 +8,7 @@ global.office[5] = sOffice5;
 
 
 alpha = 0;
-global.life = 1000;
+global.life = 3;
 
 global.alive = 0;
 
